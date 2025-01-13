@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".authentication.SignUp"
+    android:background="@color/white_F0F4F2">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shape"
+        android:src="@drawable/shape"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Welcome Onboard !"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:transitionName="splash_image"
+        android:fontFamily="@font/appfont"/>
+
+    <TextView
+        android:id="@+id/text11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Let’s help you meet up your tasks"
+        android:textAlignment="center"
+        android:textColor="@color/green_006400"
+        android:textSize="28sp"
+        android:transitionName="splash_image"
+        android:fontFamily="@font/appfont"/>
+
+    <EditText
+        android:id="@+id/ETUsername"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:hint="Enter your username"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        android:background="@drawable/rectangle2"/>
+
+    <EditText
+        android:id="@+id/ETSignupEmail"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:hint="Enter your email"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:background="@drawable/rectangle2"/>
+
+    <EditText
+        android:id="@+id/ETSignupPassword"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:hint="Enter password"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:background="@drawable/rectangle2"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/ETSignupPasswordConfirm"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:hint="Confirm password"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:background="@drawable/rectangle2"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rectangle1"
+        android:layout_marginTop="35dp"
+        android:text="Sign Up"
+        android:layout_gravity="center_horizontal"
+        android:textSize="28sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Already have an Account?"
+            android:textSize="17sp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/TVLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:minWidth="48dp"
+                android:text="Sign in"
+                android:textSize="17sp"
+                android:textColor="@color/blue_50D2C9"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
