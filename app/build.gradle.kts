@@ -45,6 +45,8 @@ dependencies {
     implementation ("androidx.work:work-runtime:2.8.1")
     implementation ("net.zetetic:android-database-sqlcipher:4.5.3")
     implementation ("androidx.sqlite:sqlite:2.1.0")
+    implementation(libs.navigation.fragment)
+    implementation(libs.navigation.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
